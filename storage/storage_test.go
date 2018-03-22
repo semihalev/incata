@@ -2,10 +2,10 @@ package storage_test
 
 import (
 	"github.com/DATA-DOG/go-sqlmock"
-	. "github.com/mantzas/incata/storage"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
+	. "github.com/semihalev/incata/storage"
 )
 
 var _ = Describe("Storage", func() {

@@ -1,9 +1,9 @@
 package model_test
 
 import (
-	. "github.com/mantzas/incata/model"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/semihalev/incata/model"
 
 	"time"
 

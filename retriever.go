@@ -3,9 +3,9 @@ package incata
 import (
 	"errors"
 
-	"github.com/mantzas/incata/model"
-	"github.com/mantzas/incata/reader"
 	"github.com/satori/go.uuid"
+	"github.com/semihalev/incata/model"
+	"github.com/semihalev/incata/reader"
 )
 
 // Retriever interface
@@ -36,6 +36,5 @@ func NewRetriever() (*EventRetriever, error) {
 
 // Retrieve  events based on Source ID
 func (appender *EventRetriever) Retrieve(sourceID uuid.UUID) ([]model.Event, error) {
-
 	return appender.Reader.Read(sourceID)
 }

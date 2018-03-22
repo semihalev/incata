@@ -11,13 +11,13 @@ import (
 
 	_ "github.com/denisenkom/go-mssqldb" // import sql driver
 	_ "github.com/lib/pq"                // import postgrsql driver
-	"github.com/mantzas/incata"
-	"github.com/mantzas/incata/marshal"
-	"github.com/mantzas/incata/model"
-	"github.com/mantzas/incata/reader"
-	"github.com/mantzas/incata/storage"
-	"github.com/mantzas/incata/writer"
 	"github.com/satori/go.uuid"
+	"github.com/semihalev/incata"
+	"github.com/semihalev/incata/marshal"
+	"github.com/semihalev/incata/model"
+	"github.com/semihalev/incata/reader"
+	"github.com/semihalev/incata/storage"
+	"github.com/semihalev/incata/writer"
 )
 
 type payload struct {

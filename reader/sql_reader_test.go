@@ -7,12 +7,12 @@ import (
 	"time"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	. "github.com/mantzas/incata/marshal"
-	. "github.com/mantzas/incata/reader"
-	. "github.com/mantzas/incata/storage"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/satori/go.uuid"
+	. "github.com/semihalev/incata/marshal"
+	. "github.com/semihalev/incata/reader"
+	. "github.com/semihalev/incata/storage"
 )
 
 type AnyType struct{}

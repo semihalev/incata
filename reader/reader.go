@@ -1,8 +1,8 @@
 package reader
 
 import (
-	"github.com/mantzas/incata/model"
 	"github.com/satori/go.uuid"
+	"github.com/semihalev/incata/model"
 )
 
 // Reader interface for getting events

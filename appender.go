@@ -3,8 +3,8 @@ package incata
 import (
 	"errors"
 
-	"github.com/mantzas/incata/model"
-	"github.com/mantzas/incata/writer"
+	"github.com/semihalev/incata/model"
+	"github.com/semihalev/incata/writer"
 )
 
 // Appender interface

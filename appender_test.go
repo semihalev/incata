@@ -3,11 +3,11 @@ package incata
 import (
 	"time"
 
-	. "github.com/mantzas/incata/mocks"
-	. "github.com/mantzas/incata/model"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/satori/go.uuid"
+	. "github.com/semihalev/incata/mocks"
+	. "github.com/semihalev/incata/model"
 )
 
 var _ = Describe("Appender", func() {

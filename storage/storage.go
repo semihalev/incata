@@ -13,11 +13,13 @@ type DbType int
 const (
 	MSSQL      DbType = iota // MS SQL Server
 	PostgreSQL               // Postgresql
+	MySQL                    // MySQL
 )
 
 var dbTypeMap = map[string]DbType{
 	"mssql":      MSSQL,
 	"postgresql": PostgreSQL,
+	"mysql":      MySQL,
 }
 
 // ConvertToDbType convert's a string to a DbType
@@ -105,6 +107,10 @@ func NewStorageFinalized(db *sql.DB, dbType DbType, tableName string) (*Storage,
 func getStatements(dbType DbType, tableName string) (string, string, string, error) {
 
 	switch dbType {
+
+	case MySQL:
+		return "mysql", fmt.Sprintf(`insert into %s ("source_id","created","event_type","version","payload") values ($1, $2, $3, $4, $5)`, tableName),
+			fmt.Sprintf(`SELECT id, source_id, created, event_type, version, payload FROM %s WHERE source_id = $1`, tableName), nil
 
 	case MSSQL:
 		return "mssql", fmt.Sprintf("INSERT INTO %s (SourceId, Created, EventType, Version, Payload) VALUES (?, ?, ?, ?, ?)", tableName),

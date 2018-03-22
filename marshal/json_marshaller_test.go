@@ -3,10 +3,10 @@ package marshal_test
 import (
 	"time"
 
-	. "github.com/mantzas/incata/marshal"
-	. "github.com/mantzas/incata/mocks"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/semihalev/incata/marshal"
+	. "github.com/semihalev/incata/mocks"
 )
 
 var _ = Describe("Marshal", func() {

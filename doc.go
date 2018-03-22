@@ -85,6 +85,6 @@ DB Table setup (Provide a table name)
        USING btree
        ("SourceId");
 
-For a full guide visit https://github.com/mantzas/incata
+For a full guide visit https://github.com/semihalev/incata
 */
 package incata

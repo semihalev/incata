@@ -1,8 +1,9 @@
 package mocks
 
 import (
-	"github.com/mantzas/incata/model"
 	"sync"
+
+	"github.com/semihalev/incata/model"
 )
 
 // MemoryWriter Writer for memory

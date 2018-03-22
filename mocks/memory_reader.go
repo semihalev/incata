@@ -1,8 +1,8 @@
 package mocks
 
 import (
-	"github.com/mantzas/incata/model"
 	"github.com/satori/go.uuid"
+	"github.com/semihalev/incata/model"
 )
 
 // MemoryReader for memory reading

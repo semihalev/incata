@@ -7,13 +7,13 @@ import (
 	"database/sql/driver"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	. "github.com/mantzas/incata/marshal"
-	. "github.com/mantzas/incata/mocks"
-	. "github.com/mantzas/incata/model"
-	. "github.com/mantzas/incata/storage"
-	. "github.com/mantzas/incata/writer"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/semihalev/incata/marshal"
+	. "github.com/semihalev/incata/mocks"
+	. "github.com/semihalev/incata/model"
+	. "github.com/semihalev/incata/storage"
+	. "github.com/semihalev/incata/writer"
 
 	"time"
 
